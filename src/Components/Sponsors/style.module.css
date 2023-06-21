@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+}
+.title {
+  color: var(--grey-background);
+}
+.sponsorLogo {
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.logoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+}
+.logoContainer :nth-child(2n) {
+  justify-self: flex-end;
+}
+
+@media (min-width: 576px) {
+  .logoContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+}
