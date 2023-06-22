@@ -13,6 +13,8 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "./src/assets"),
     },
   },
+  base: "/metaverse_page",
+
   plugins: [react()],
   css: {
     modules: {
