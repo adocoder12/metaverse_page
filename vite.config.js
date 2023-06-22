@@ -14,7 +14,6 @@ export default defineConfig({
     },
   },
   base: "/metaverse_page",
-
   plugins: [react()],
   css: {
     modules: {
